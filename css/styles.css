@@ -1,10 +1,19 @@
 @charset "UTF-8";
 /* Estilos personalizados*/
 
+.section__principal {
+  background-image: url(../img/backgrounds/background_main.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
+.aprende:hover {
+  background-color: wheat !important;
+}
 
-
-
+.section__secundario {
+  background-color: purple;
+}
 
 
 
@@ -11983,3 +11992,5 @@ textarea.form-control-lg {
     display: none !important;
   }
 }/*# sourceMappingURL=styles.css.map */
+
+
