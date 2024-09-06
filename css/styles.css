@@ -1,4 +1,21 @@
 @charset "UTF-8";
+/* Estilos personalizados*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Estilos de Bootstrap*/
+
 /*!
  * Bootstrap  v5.3.3 (https://getbootstrap.com/)
  * Copyright 2011-2024 The Bootstrap Authors
@@ -185,6 +202,7 @@
 *::before,
 *::after {
   box-sizing: border-box;
+  list-style: none;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -350,7 +368,7 @@ sup {
 
 a {
   color: rgba(var(--bs-link-color-rgb), var(--bs-link-opacity, 1));
-  text-decoration: underline;
+  text-decoration: none;
 }
 a:hover {
   --bs-link-color-rgb: var(--bs-link-hover-color-rgb);

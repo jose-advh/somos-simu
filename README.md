@@ -9,6 +9,12 @@
 - **CSS3**: Para personalizar el diseño y estilo (archivo `styles.css`).
 - **Bootstrap**: Biblioteca de estilos y componentes, cargada desde el archivo JavaScript que se encuentra en `node_modules`.
 
+## Folders
+
+- **`css/`**: Aquí se guardarán todos los estilos de la plataforma.
+- **`img/`**: Aquí irán todas las imgs, iconos etc.. del proyecto.
+- **`pages/`**: Aquí irán todas las páginas exceptuando index, esta siempre quedará fuera.
+
 ## Instalación
 Para utilizar este proyecto en tu local, sigue estos pasos:
 
