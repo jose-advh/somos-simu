@@ -20,4 +20,4 @@ Para utilizar este proyecto en tu local, sigue estos pasos:
 
 1. Clona el repositorio:
    ```bash
-   git clone https://github.com/tu-repo/somos-simu.git
+   git clone https://github.com/jose-advh/somos-simu.git
