@@ -1,12 +1,19 @@
 @charset "UTF-8";
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
 /* Estilos personalizados*/
 
 
+.section__principal {
+  background: url(../img/backgrounds/background_main.jpeg) no-repeat center/cover;
+  height: 100vh;
+}
 
 .aprende:hover {
   background-color: wheat !important;
+
 }
+
 
 .section__secundario {
   background-color: purple;
@@ -621,8 +628,9 @@ progress {
 
 .display-1 {
   font-size: calc(1.625rem + 4.5vw);
-  font-weight: 300;
+  font-weight: 900;
   line-height: 1.2;
+  color: black;
 }
 @media (min-width: 1200px) {
   .display-1 {
