@@ -18,7 +18,7 @@
 }
 
 .section__secundario {
-  background-color: purple;
+  background-color: black;
 }
 
 .main__article {
@@ -80,10 +80,10 @@
   --bs-success: #198754;
   --bs-info: #0dcaf0;
   --bs-warning: #ffc107;
-  --bs-danger: #dc3545;
+  --bs-danger: rgb(211, 144, 117);
   --bs-light: rgb(248, 249, 250);
   --bs-dark: #212529;
-  --bs-primary-rgb: 255, 238, 0;
+  --bs-primary-rgb: 92, 246, 201;
   --bs-secondary-rgb: 248, 249, 250;
   --bs-success-rgb: 25, 135, 84;
   --bs-info-rgb: 13, 202, 240;
@@ -662,7 +662,7 @@ progress {
 }
 @media (min-width: 1200px) {
   .display-2 {
-    font-size: 4.5rem;
+    font-size: 3.5rem;
   }
 }
 
@@ -3061,8 +3061,8 @@ textarea.form-control-lg {
 
 .btn-primary {
   --bs-btn-color: black;
-  --bs-btn-bg: rgb(255, 238, 0);
-  --bs-btn-border-color: rgb(255, 238, 0);
+  --bs-btn-bg: rgb(1, 155, 148);
+  --bs-btn-border-color:  rgb(1, 155, 148);
   --bs-btn-hover-color: #fff;
   --bs-btn-hover-bg: #0b5ed7;
   --bs-btn-hover-border-color: #0a58ca;
@@ -3215,8 +3215,8 @@ textarea.form-control-lg {
 }
 
 .btn-outline-secondary {
-  --bs-btn-color: #6c757d;
-  --bs-btn-border-color: #6c757d;
+  --bs-btn-color: black;
+  --bs-btn-border-color:  rgb(1, 155, 148);
   --bs-btn-hover-color: #fff;
   --bs-btn-hover-bg: #6c757d;
   --bs-btn-hover-border-color: #6c757d;
@@ -6036,7 +6036,7 @@ textarea.form-control-lg {
 
 .carousel-inner {
   position: relative;
-  width: 100%;
+  width: 50%;
   overflow: hidden;
 }
 .carousel-inner::after {
