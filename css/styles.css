@@ -18,7 +18,6 @@
 }
 
 .section__secundario {
-  background-color: black;
 }
 
 .main__article {
@@ -6111,11 +6110,10 @@ textarea.form-control-lg {
   justify-content: center;
   width: 15%;
   padding: 0;
-  color: #fff;
+  color: black;
   text-align: center;
   background: none;
   border: 0;
-  opacity: 0.5;
   transition: opacity 0.15s ease;
 }
 @media (prefers-reduced-motion: reduce) {
@@ -6182,7 +6180,7 @@ textarea.form-control-lg {
   margin-left: 3px;
   text-indent: -999px;
   cursor: pointer;
-  background-color: #fff;
+  background-color: black;
   background-clip: padding-box;
   border: 0;
   border-top: 10px solid transparent;
