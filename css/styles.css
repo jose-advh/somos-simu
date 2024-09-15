@@ -49,3 +49,11 @@
   .nav_ul-contenido {
     font-weight: 900;
   }
+
+  .nav_ul-index a {
+    font-weight: 600;
+  }
+
+  .header-index a {
+    font-weight: 600;
+  }
