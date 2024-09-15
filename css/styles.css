@@ -1,12 +1,51 @@
-/* Estilos personalizados*/
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+* {
+  font-family: "Quicksand", sans-serif !important;  
+}
 
 .section_principal-index {
     background: url(../img/backgrounds/background_main.jpeg);
-    max-height: 110vh;
+    max-height: 103vh;
   }
   
   .header-index {
     position: fixed;
     right: 0;
     left: 0;
+  }
+
+  .nav_aprender-index {
+    background-color: rgb(225, 255, 216);
+    align-items: center;
+    text-align: center;
+    padding: 10px 10px;
+    border-radius: 5px 10px;
+  }
+
+  .nav_aprender-index:hover {
+    transition: background 0.5s ease;
+    background-color: gray;
+  }
+
+  .main_section_secundario-index {
+    width: 100%;
+    background-color: black;
+  }
+
+  .header-contenido{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 1px solid;
+    height: 100vh;
+    width: 10rem;
+  }
+
+  .header_nav-contenido {
+    border: 1px solid;
+  }
+
+  .nav_ul-contenido {
+    font-weight: 900;
   }
