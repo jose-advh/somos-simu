@@ -16,7 +16,7 @@
   }
 
   .nav_aprender-index {
-    background-color: rgb(225, 255, 216);
+    background-color: rgb(245, 245, 245);
     align-items: center;
     text-align: center;
     padding: 10px 10px;
@@ -34,20 +34,32 @@
   }
 
   .header-contenido{
+    background-color: #fffeff;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    border: 1px solid;
     height: 100vh;
-    width: 10rem;
+    width: 12rem;
   }
 
   .header_nav-contenido {
-    border: 1px solid;
+    justify-content: space-between;
+    align-items: center;
+    height: 90%;
+  }
+
+  .header_nav-contenido a {
+    font-weight: 900;
   }
 
   .nav_ul-contenido {
     font-weight: 900;
+    font-size: 1rem;
+    padding: 20px;
+  }
+
+  .nav_ul-contenido li {
+    margin-top: 15px;
   }
 
   .nav_ul-index a {
@@ -57,3 +69,22 @@
   .header-index a {
     font-weight: 600;
   }
+
+.linea_roja-contenido {
+  position: relative;
+}
+
+.linea_roja-contenido::before {
+  content: "";
+  position: absolute;
+  left: -20px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 5px;
+  height: 90%;
+  background-color: red;
+  }
+
+.body-contenido {
+  background-color: #dfdeec;
+}
