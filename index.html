@@ -8,38 +8,75 @@
   <link rel="stylesheet" href="css/bootsrap.css">
 </head>
 <body class="body-index">
-  <section class="section_principal-index">
-    <header class="header-index w-100 m-auto rounded">
-      <nav class="header_nav-index d-flex bg-warning w-95 shadow m-auto rounded py-2 px-4">
-        <ul class="nav_ul-index d-flex gap-4 py-2 m-auto w-100 justify-content-center">
+  <section class="section_principal-index justify-content-center align-items-center">
+    <header class="header-index ">
+      <nav class="header_nav-index py-1 px-4 align-items-center justify-content-between">        
+        <ul class="nav_ul-index d-flex gap-4 ">
           <li><a href="#">NOSOTROS</a></li>
           <li><a href="#">CONTACTO</a></li>
           <li><a href="#">RECURSOS</a></li>
           <li><a href="#">COMUNIDAD</a></li>
         </ul>
 
-        <a href="pages/simulacros.html" class="nav_aprender-index m-auto">APRENDER</a>
+        <ul class="nav_ul_acceder-index d-flex align-items-center gap-2">
+          <a href="pages/simulacros.html" class="nav_crear_cuenta-index">CREAR CUENTA</a>
+          <a href="pages/simulacros.html" class="nav_aprender-index">APRENDER</a>
+        </ul>
       </nav>
-
     </header>
+    
     <main class="main-index px-5 py-6 w-100 ">
-      <section class="main_section_principal-index d-flex py-2 ">
-        <img src="img/personas/chica_libro_1_11zon.webp" alt="Chica sugetando un libro" class="w-25 "> 
+      <section class="main_section_principal-index d-flex py-2 align-items-center justify-content-center">
+
         <article class="main_texto_principal-index py-6">
-          <h1 class="display-2">SOMOS SIMU</h1>
-          <h2 class="w-95 display-3">
-            Prepárate para el ICFES de manera interactiva, efectiva y entretenida.
-          </h2>
-          <a class="btn btn-primary fw-bold" href="#" role="button">INICIAR AHORA</a>
-          <button type="button" class="btn btn-outline-secondary fw-bold">CREAR CUENTA</button>
+          <img src="/img/backgrounds/SOMOS-removebg-preview.png" class="principal_somos_simu-index justify-content-center w-100" alt="Imagen SIMU ICFES">
         </article>
+        <img src="img/personas/chica_libro_1_11zon.webp" alt="Chica sugetando un libro" class="principal_chica_libro w-30 "> 
+
       </section>
     </section>
-      <section class="main_section_secundario-index d-flex justify-content-center gap-4 mt-5">
-        <h1>viva el queso</h1>
+      <section class="main_section_secundario-index d-flex flex-column justify-content-center gap-4 mt-5">
+        <article class="secundario_simulacros-index">
+          <h2 class="text-center">SIMULACROS</h2>
+
+          <div class="secundario_tarjetas-index d-flex justify-content-center gap-2 py-4">
+    
+          <div class="card" style="width: 18rem;">
+            <img src="img/cards_simulacro/index_secundario/simulacros.jpg" class="card-img-top shadow" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">GENERALES</h5>
+              <p class="card-text">Un texto de ejemplo rápido para colocal cerca del título de la tarjeta y componer la mayor parte del contenido de la tarjeta.</p>
+              <a href="#" class="btn btn-primary">Probar</a>
+            </div>
+          </div>
+
+          
+          <div class="card" style="width: 18rem;">
+            <img src="img/cards_simulacro/index_secundario/simulacros.jpg" class="card-img-top shadow" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">MATERIAS</h5>
+              <p class="card-text">Un texto de ejemplo rápido para colocal cerca del título de la tarjeta y componer la mayor parte del contenido de la tarjeta.</p>
+              <a href="#" class="btn btn-primary">Probar</a>
+            </div>
+          </div>
+
+          
+          <div class="card" style="width: 18rem;">
+            <img src="img/cards_simulacro/index_secundario/simulacros.jpg" class="card-img-top shadow" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">DESAFÍOS</h5>
+              <p class="card-text">Un texto de ejemplo rápido para colocal cerca del título de la tarjeta y componer la mayor parte del contenido de la tarjeta.</p>
+              <a href="#" class="btn btn-primary">Probar</a>
+            </div>
+          </div>
+
+
+          </div>
+        </article>
       </section>
     </main>
 
-
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="js/scripts.js"></script>
 </body>
 </html>
