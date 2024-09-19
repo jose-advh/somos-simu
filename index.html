@@ -4,79 +4,132 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Somos Simu</title>
+  <meta name="description" content="Plataforma de estudio para la prueba Saber 11 (ICFES)">
   <link rel="stylesheet" href="css/styles.css">
   <link rel="stylesheet" href="css/bootsrap.css">
 </head>
+
 <body class="body-index">
   <section class="section_principal-index justify-content-center align-items-center">
-    <header class="header-index ">
-      <nav class="header_nav-index py-1 px-4 align-items-center justify-content-between">        
-        <ul class="nav_ul-index d-flex gap-4 ">
+    <header class="header-index">
+      <nav class="header_nav-index py-2 px-4 align-items-center justify-content-between">
+        <ul class="nav_ul-index d-flex gap-4">
           <li><a href="#">NOSOTROS</a></li>
           <li><a href="#">CONTACTO</a></li>
           <li><a href="#">RECURSOS</a></li>
           <li><a href="#">COMUNIDAD</a></li>
         </ul>
-
-        <ul class="nav_ul_acceder-index d-flex align-items-center gap-2">
-          <a href="pages/simulacros.html" class="nav_crear_cuenta-index">CREAR CUENTA</a>
-          <a href="pages/simulacros.html" class="nav_aprender-index">APRENDER</a>
+        <ul class="nav_ul_acceder-index d-flex align-items-center gap-2 py-2">
+          <li><a href="/pages/acceder.html" class="nav_crear_cuenta-index">CREAR CUENTA</a></li>
+          <li><a href="/pages/acceder.html" class="nav_aprender-index">APRENDER</a></li>
         </ul>
       </nav>
     </header>
-    
-    <main class="main-index px-5 py-6 w-100 ">
-      <section class="main_section_principal-index d-flex py-2 align-items-center justify-content-center">
 
+    <main class="main-index px-5 py-6 w-100">
+      <section class="main_section_principal-index d-flex py-2 align-items-center justify-content-center">
         <article class="main_texto_principal-index py-6">
           <img src="/img/backgrounds/SOMOS-removebg-preview.png" class="principal_somos_simu-index justify-content-center w-100" alt="Imagen SIMU ICFES">
         </article>
-        <img src="img/personas/chica_libro_1_11zon.webp" alt="Chica sugetando un libro" class="principal_chica_libro w-30 "> 
-
+        <img src="img/personas/chica_libro_1_11zon.webp" alt="Chica sujetando un libro" class="principal_chica_libro w-30"> 
       </section>
     </section>
-      <section class="main_section_secundario-index d-flex flex-column justify-content-center gap-4 mt-5">
-        <article class="secundario_simulacros-index">
-          <h2 class="text-center">SIMULACROS</h2>
 
-          <div class="secundario_tarjetas-index d-flex justify-content-center gap-2 py-4">
-    
-          <div class="card" style="width: 18rem;">
-            <img src="img/cards_simulacro/index_secundario/simulacros.jpg" class="card-img-top shadow" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">GENERALES</h5>
-              <p class="card-text">Un texto de ejemplo rápido para colocal cerca del título de la tarjeta y componer la mayor parte del contenido de la tarjeta.</p>
-              <a href="#" class="btn btn-primary">Probar</a>
+    <section class="asignaturas">
+      <div class="scrolling-content">
+        <div class="asignatura">
+          <img src="./img/mate.png" alt="Matemáticas">
+          <div class="text-content"><h3>Matemáticas</h3></div>
+        </div>
+        <div class="asignatura2">
+          <img src="./img/lectura.png" alt="Lectura Crítica">
+          <div class="text-content"><h3>Lectura Crítica</h3></div>
+        </div>
+        <div class="asignatura2">
+          <img src="./img/sociales.png" alt="Ciencias Sociales">
+          <div class="text-content"><h3>Ciencias Sociales</h3></div>
+        </div>
+        <div class="asignatura">
+          <img src="./img/ingles.png" alt="Inglés">
+          <div class="text-content"><h3>Inglés</h3></div>
+        </div>
+        <div class="asignatura2">
+          <img src="./img/naturales.png" alt="Ciencias Naturales">
+          <div class="text-content"><h3>Ciencias Naturales</h3></div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div id="carouselExampleDark" class="carousel carousel-dark slide custom-carousel" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="3" aria-label="Slide 4"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="4" aria-label="Slide 5"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="10000">
+            <div class="carousel-content">
+              <img src="./img/simulacro.png" class="carousel-img" alt="Simulacros">
+              <div class="carousel-text">
+                <h3>Practica con Nuestros Simulacros de Prueba Saber</h3>
+                <p>Prepárate para el éxito con nuestros simulacros personalizados, diseñados para replicar la experiencia real de la prueba ICFES.</p>
+              </div>
             </div>
           </div>
-
-          
-          <div class="card" style="width: 18rem;">
-            <img src="img/cards_simulacro/index_secundario/simulacros.jpg" class="card-img-top shadow" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">MATERIAS</h5>
-              <p class="card-text">Un texto de ejemplo rápido para colocal cerca del título de la tarjeta y componer la mayor parte del contenido de la tarjeta.</p>
-              <a href="#" class="btn btn-primary">Probar</a>
+          <div class="carousel-item" data-bs-interval="2000">
+            <div class="carousel-content">
+              <img src="./img/cuenta.jpg" class="carousel-img" alt="Cuenta de acceso">
+              <div class="carousel-text">
+                <h3>Crea Tu Cuenta y Accede a Tus Resultados</h3>
+                <p>Registra tus datos y crea una cuenta para acceder a tus notas, historial de simulacros y materiales de apoyo exclusivos.</p>
+              </div>
             </div>
           </div>
-
-          
-          <div class="card" style="width: 18rem;">
-            <img src="img/cards_simulacro/index_secundario/simulacros.jpg" class="card-img-top shadow" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">DESAFÍOS</h5>
-              <p class="card-text">Un texto de ejemplo rápido para colocal cerca del título de la tarjeta y componer la mayor parte del contenido de la tarjeta.</p>
-              <a href="#" class="btn btn-primary">Probar</a>
+          <div class="carousel-item">
+            <div class="carousel-content">
+              <img src="./img/resultados.webp" class="carousel-img" alt="Resultados">
+              <div class="carousel-text">
+                <h3>Accede a Tus Notas y Analiza Tu Progreso</h3>
+                <p>Después de completar un simulacro, podrás ver tus notas y analizar tus fortalezas y debilidades para mejorar tus resultados.</p>
+              </div>
             </div>
           </div>
-
-
+          <div class="carousel-item">
+            <div class="carousel-content">
+              <img src="./img/materiales.jpg" class="carousel-img" alt="Materiales de apoyo">
+              <div class="carousel-text">
+                <h3>Recursos Educativos para Tu Éxito</h3>
+                <p>Descarga materiales de apoyo, guías de estudio y recursos adicionales para reforzar tus conocimientos y prepararte para la prueba Saber 11.</p>
+              </div>
+            </div>
           </div>
-        </article>
-      </section>
-    </main>
+          <div class="carousel-item">
+            <div class="carousel-content">
+              <img src="./img/gratis.jpg" class="carousel-img" alt="Gratuito">
+              <div class="carousel-text">
+                <h3>¡Totalmente Gratis! Sin Costo, Sin Compromiso</h3>
+                <p>En Simu-ICFES, creemos que la educación debe ser accesible para todos. Por eso, ofrecemos nuestros simulacros, materiales de apoyo y recursos exclusivos sin cargo alguno.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev" style="left: -10%;">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Anterior</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Siguiente</span>
+        </button>
+      </div>
+    </section>
+  </main>
 
-    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script src="js/scripts.js"></script>
+  <!-- Javascript -->
+  <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="js/scripts.js"></script>
 </body>
 </html>
