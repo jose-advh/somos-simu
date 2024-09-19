@@ -1,78 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Acceso - Simu</title>
-    <script
-    src="https://kit.fontawesome.com/869dc8f5ef.js"
-    crossorigin="anonymous"
-  ></script>
-  <link rel="stylesheet" href="/css/bootsrap.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Acceder</title>
   <link rel="stylesheet" href="/css/styles.css">
+  <link rel="stylesheet" href="/css/bootsrap.css">
 </head>
-<body class="body-acceder">
-    <div class="container" id="container">
-        <div class="form-container sign-up-container">
-          <form action="#">
-            <h1>Crea tu Cuenta</h1>
-            <div class="social-container">
-              <a href="#" class="social>">
-                <i class="fab fa-facebook-f"></i>
+<body>
+  <header class="header-acceder">
+    <a href="#">Volver</a>
+  </header>
+  <main class="main-acceder">
+    <section class="contenedor-acceder d-flex">
+      <div class="contenedor-formulario-acceder">
+        <form action="#" class="formulario-acceder d-flex flex-column m-auto w-75 gap-2">
+          <h2>Crear Cuenta</h2>
+          <div class="redes_sociales-acceder">
+              <a href="#">
+                <img src="/img/iconos/google_13170545.png" alt="Logo red social google" class="red_sociales_logos-acceder">
               </a>
-              <a href="#" class="social>">
-                <i class="fab fa-google" id="red"></i>
+              <a href="#">
+                <img src="/img/iconos/facebook_5968764.png" alt="Logo red social faceboock" class="red_sociales_logos-acceder">
               </a>
-              <a href="#" class="social>">
-                <i class="fab fa-linkedin-in"></i>
+              <a href="#">
+                <img src="/img/iconos/twitter-alt-circle_12107562.png" alt="Logo red social twitter" class="red_sociales_logos-acceder">
               </a>
-            </div>
-            <span>o usa tu email como registro</span>
-            <input type="text" placeholder="Name" />
-            <input type="email" placeholder="Email" />
-            <input type="password" placeholder="Password" />
-            <button id="lila">Registrar</button>
-          </form>
-        </div>
-        <div class="form-container sign-in-container">
-          <form action="#">
-            <h1>Iniciar Sesión</h1>
-            <div class="social-container">
-              <a href="#" class="social">
-                <i class="fab fa-facebook-f"></i>
-              </a>
-              <a href="#" class="social>">
-                <i class="fab fa-google" id="red"></i>
-              </a>
-              <a href="#" class="social">
-                <i class="fab fa-linkedin-in"></i>
-              </a>
-            </div>
-            <span>o usa tu email</span>
-            <input type="email" placeholder="Email" />
-            <input type="password" placeholder="Password" />
-            <a href="#">Olvidaste tu contraseña?</a>
-            <button>Iniciar sesión</button>
-          </form>
-        </div>
-        <div class="overlay-container">
-          <div class="overlay">
-            <div class="overlay-panel overlay-left">
-              <h1>¡Bienvenido!</h1>
-              <p>
-                Inicia sesión con tu cuenta
-              </p>
-              <button class="ghost" id="signIn">Inicia sesión</button>
-            </div>
-            <div class="overlay-panel overlay-right">
-              <h1>Hola!!!</h1>
-              <p>Crear tu cuenta</p>
-              <button class="ghost" id="signUp">Registrar</button>
-            </div>
           </div>
-        </div>
+              <span>o registrate con tu correo</span>
+              <input type="text" placeholder="  Nombre" required>
+              <input type="email" placeholder="  Correo" required>
+              <input type="password" placeholder="  Contraseña" required>
+              <button type="submit" class="button_submit-acceder">Registrarme</button>
+        </form>
       </div>
-  
-      <script src="/js/scripts.js"></script>
+
+      <div class="contenedor-formulario-acceder">
+        <form action="#" class="formulario-acceder d-flex flex-column m-auto w-75 gap-2">
+          <h2>Iniciar Sesión</h2>
+          <div class="redes_sociales-acceder">
+              <a href="#">
+                <img src="/img/iconos/google_13170545.png" alt="Logo red social google" class="red_sociales_logos-acceder">
+              </a>
+              <a href="#">
+                <img src="/img/iconos/facebook_5968764.png" alt="Logo red social faceboock" class="red_sociales_logos-acceder">
+              </a>
+              <a href="#">
+                <img src="/img/iconos/twitter-alt-circle_12107562.png" alt="Logo red social twitter" class="red_sociales_logos-acceder">
+              </a>
+          </div>
+              <span>o inicia sesión con tu correo</span>
+              <input type="email" placeholder="  Correo" required>
+              <input type="password" placeholder="  Contraseña" required>
+              <a href="#">¿Olvidaste tu contraseña?</a>
+              <button type="submit" class="button_submit-acceder">Iniciar</button>
+        </form>
+      </div>
+    </section>
+  </main>
+  <footer></footer>
 </body>
 </html>
