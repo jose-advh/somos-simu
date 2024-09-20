@@ -1,6 +1,6 @@
-const signUpButton = document.getElementById('signUp');
-const signInButton = document.getElementById('signIn');
-const container = document.getElementById('container');
+const botonRegistrar = document.getElementById('registrar');
+const botonIniciarSesion = document.getElementById('iniciarSesion');
+const contenedor = document.getElementById('contenedor');
 
 window.addEventListener('scroll', function() {
     let header = document.querySelector('header');
@@ -11,14 +11,12 @@ window.addEventListener('scroll', function() {
     }
 })
 
-//
-
-// Evento para abrir form de registro
-signUpButton.addEventListener('click', () =>
-  container.classList.add('right-panel-active')
+// Evento para abrir formulario de registro
+botonRegistrar.addEventListener('click', () =>
+  contenedor.classList.add('contenedor--panel-derecho-activo')
 );
 
-// Evento para regresar al form de iniciar sesión
-signInButton.addEventListener('click', () =>
-  container.classList.remove('right-panel-active')
+// Evento para regresar al formulario de iniciar sesión
+botonIniciarSesion.addEventListener('click', () =>
+  contenedor.classList.remove('contenedor--panel-derecho-activo')
 );
