@@ -1,134 +1,89 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Somos Simu</title>
-  <meta name="description" content="Plataforma de estudio para la prueba Saber 11 (ICFES)">
-  <link rel="stylesheet" href="css/styles.css">
-  <link rel="stylesheet" href="css/bootsrap.css">
-</head>
+  <title>Simu Icfes</title>
+  <link rel="stylesheet" href="/css/styles.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
-<body class="body-index">
-  <section class="section_principal-index justify-content-center align-items-center">
-    <header class="header-index">
-      <nav class="header_nav-index py-2 px-4 align-items-center justify-content-between">
-        <ul class="nav_ul-index d-flex gap-4">
-          <li><a href="#">NOSOTROS</a></li>
-          <li><a href="#">CONTACTO</a></li>
-          <li><a href="#">RECURSOS</a></li>
-          <li><a href="#">COMUNIDAD</a></li>
-        </ul>
-        <ul class="nav_ul_acceder-index d-flex align-items-center gap-2 py-2">
-          <li><a href="/pages/acceder.html" class="nav_aprender-index">APRENDER AHORA</a></li>
-        </ul>
+</head>
+<body>
+  <div class="seccion__principal">
+    <header class="header" id="header">
+      <nav class="navbar navbar-expand-lg navbar-light align-items-center justify-content-between">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">NOSOTROS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">CONTACTO</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">COMUNIDAD</a>
+              </li>
+              <li class="nav-item dropdown"></li>
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  RECURSOS
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <li><a class="dropdown-item" href="#">CONSEJOS</a></li>
+                  <li><a class="dropdown-item" href="#">DISCAPACIDAD</a></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <ul>
+            <li class="nav-item">
+              <a href="/pages/acceder.html" class="header__btn py-3 px-5 ">Aprender ahora</a>
+            </li>
+          </ul>
+        </div>
+
+
       </nav>
     </header>
+    <main class="main justify-content-center align-items-center text-center">
+      <figure class="main__figure">
+        <img src="/img/backgrounds/texto_somos_simu.webp" class="main__img m-auto" alt="Somos Simu">
+      </figure>
 
-    <main class="main-index px-5 py-6 w-100">
-      <section class="main_section_principal-index d-flex py-2 align-items-center justify-content-center">
-        <article class="main_texto_principal-index py-6">
-          <img src="/img/backgrounds/SOMOS-removebg-preview.png" class="principal_somos_simu-index justify-content-center w-100" alt="Imagen SIMU ICFES">
-        </article>
-        <img src="img/personas/chica_libro_1_11zon.webp" alt="Chica sujetando un libro" class="principal_chica_libro w-30"> 
+      <section class="asignaturas">
+        <div class="scrolling-content">
+          <div class="asignatura">
+            <img src="./img/mate.png" alt="Matemáticas">
+            <div class="text-content"><h3>Matemáticas</h3></div>
+          </div>
+          <div class="asignatura2">
+            <img src="./img/lectura.png" alt="Lectura Crítica">
+            <div class="text-content"><h3>Lectura Crítica</h3></div>
+          </div>
+          <div class="asignatura2">
+            <img src="./img/sociales.png" alt="Ciencias Sociales">
+            <div class="text-content"><h3>Ciencias Sociales</h3></div>
+          </div>
+          <div class="asignatura">
+            <img src="./img/ingles.png" alt="Inglés">
+            <div class="text-content"><h3>Inglés</h3></div>
+          </div>
+          <div class="asignatura2">
+            <img src="./img/naturales.png" alt="Ciencias Naturales">
+            <div class="text-content"><h3>Ciencias Naturales</h3></div>
+          </div>
+        </div>
       </section>
-    </section>
 
-    <section class="asignaturas">
-      <div class="scrolling-content">
-        <div class="asignatura">
-          <img src="./img/mate.png" alt="Matemáticas">
-          <div class="text-content"><h3>Matemáticas</h3></div>
-        </div>
-        <div class="asignatura2">
-          <img src="./img/lectura.png" alt="Lectura Crítica">
-          <div class="text-content"><h3>Lectura Crítica</h3></div>
-        </div>
-        <div class="asignatura2">
-          <img src="./img/sociales.png" alt="Ciencias Sociales">
-          <div class="text-content"><h3>Ciencias Sociales</h3></div>
-        </div>
-        <div class="asignatura">
-          <img src="./img/ingles.png" alt="Inglés">
-          <div class="text-content"><h3>Inglés</h3></div>
-        </div>
-        <div class="asignatura2">
-          <img src="./img/naturales.png" alt="Ciencias Naturales">
-          <div class="text-content"><h3>Ciencias Naturales</h3></div>
-        </div>
-      </div>
-    </section>
 
-    <section>
-      <div id="carouselExampleDark" class="carousel carousel-dark slide custom-carousel" data-bs-ride="carousel">
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
-          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="3" aria-label="Slide 4"></button>
-          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="4" aria-label="Slide 5"></button>
-        </div>
-        <div class="carousel-inner">
-          <div class="carousel-item active" data-bs-interval="10000">
-            <div class="carousel-content">
-              <img src="./img/simulacro.png" class="carousel-img" alt="Simulacros">
-              <div class="carousel-text">
-                <h3>Practica con Nuestros Simulacros de Prueba Saber</h3>
-                <p>Prepárate para el éxito con nuestros simulacros personalizados, diseñados para replicar la experiencia real de la prueba ICFES.</p>
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item" data-bs-interval="2000">
-            <div class="carousel-content">
-              <img src="./img/cuenta.jpg" class="carousel-img" alt="Cuenta de acceso">
-              <div class="carousel-text">
-                <h3>Crea Tu Cuenta y Accede a Tus Resultados</h3>
-                <p>Registra tus datos y crea una cuenta para acceder a tus notas, historial de simulacros y materiales de apoyo exclusivos.</p>
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <div class="carousel-content">
-              <img src="./img/resultados.webp" class="carousel-img" alt="Resultados">
-              <div class="carousel-text">
-                <h3>Accede a Tus Notas y Analiza Tu Progreso</h3>
-                <p>Después de completar un simulacro, podrás ver tus notas y analizar tus fortalezas y debilidades para mejorar tus resultados.</p>
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <div class="carousel-content">
-              <img src="./img/materiales.jpg" class="carousel-img" alt="Materiales de apoyo">
-              <div class="carousel-text">
-                <h3>Recursos Educativos para Tu Éxito</h3>
-                <p>Descarga materiales de apoyo, guías de estudio y recursos adicionales para reforzar tus conocimientos y prepararte para la prueba Saber 11.</p>
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <div class="carousel-content">
-              <img src="./img/gratis.jpg" class="carousel-img" alt="Gratuito">
-              <div class="carousel-text">
-                <h3>¡Totalmente Gratis! Sin Costo, Sin Compromiso</h3>
-                <p>En Simu-ICFES, creemos que la educación debe ser accesible para todos. Por eso, ofrecemos nuestros simulacros, materiales de apoyo y recursos exclusivos sin cargo alguno.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev" style="left: -10%;">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Anterior</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Siguiente</span>
-        </button>
-      </div>
-    </section>
-  </main>
-
-  <!-- Javascript -->
-  <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-  <script src="js/scripts.js"></script>
+    </main>
+  </div>
+    <!-- Script Bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <script src="/js/scripts.js"></script>
 </body>
 </html>

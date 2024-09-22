@@ -1,104 +1,67 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
 
-* {
-  font-family: "Quicksand", sans-serif !important;  
-  text-decoration: none !important;
-  color: black !important; 
-}
-
-.section_principal-index {
-    max-height: 103vh;
-    background: url('/img/backgrounds/bg-pr3.png') no-repeat center/cover;
+  * {
+    font-family: "Quicksand", sans-serif !important;  
+    text-decoration: none !important;
+    list-style: none !important;
+    color: black !important; 
   }
-  
-  .header-index {
-    width: 100%;
-    background: transparent;
-    z-index: 999;
+
+  :root {
+      /* Variables CSS */
+    --color-principal: #fdd01c;
+    --color-secundario: #ffde59c0;
+  }
+
+  .seccion__principal {
+    background: url('/img/backgrounds/background_seccion_principal.webp') no-repeat center/cover;
+
+  }
+
+  .header {
     position: fixed;
     right: 0;
     left: 0;
-
   }
 
-/* Cuando el usuario desplaza la página, el fondo de la cabecera se vuelve semi-transparente */
-
-  header.scrolled {
-    transition: background .3s ease;
-    background: rgba(255, 255, 255, 0.8);
-    height: 60px;
+  .scrolled {
+    transition: 0.3s background ease;
+    background-color: #ffffff59;
+    height: 70px;
   }
 
-  .header_nav-index {
-    display: flex;
-    width: 100%;
-  }
-
-  .header_simu-index {
+  .nav-link {
     font-weight: 900 !important;
+    margin-bottom: 25px;
   }
 
-  .nav_ul-index {
-
+  .header__span {
+    width: 150px !important;
+    margin-top: -15px;
+  
   }
 
-  .nav_aprender-index {
-    background-color: #fdd01c;
-    box-shadow: 1px 1px 2px rgba(0, 0, 0, .8);
-    align-items: center;
-    text-align: center;
-    padding: 10px 10px;
-    border-radius: 5px 10px;
-  }
-
-  .nav_crear_cuenta-index {
-    background-color: #ffde59c0;
-    box-shadow: 1px 1px 2px rgba(0, 0, 0, .8);
-    text-align: center;
-    padding: 10px 10px;
-    border-radius: 5px 10px;
-  }
-
-  .nav_aprender-index:hover,
-  .nav_crear_cuenta-index:hover {
-    transition: background 0.5s ease;
-    background-color: rgb(255, 254, 254);
-  }
-
-  .nav_ul-index a {
+  .header__btn {
     font-weight: 900 !important;
+    margin-top: 150px !important;
+    background-color: var(--color-principal) !important;
+    border-radius: 15px;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, .8);
   }
 
-  .header-index a {
-    font-weight: 600;
+  .main__figure {
+    padding-top: 100px;
   }
 
-  .principal_somos_simu-index {
-    filter: drop-shadow(
-      0 0 5px rgba(143, 139, 139, 0.8)
-    );
+  .main__img {
+    width: 55%;
   }
-
-  .principal_chica_libro {
-    filter: drop-shadow(
-      0 0 5px rgba(0, 0, 0, .8)
-    );
-    mask-image: linear-gradient(
-      black 90%,
-      transparent
-    );
-  }
-
-  .secundario_tarjetas-index {
-    background-color: #fdd01c;
-  }
-
 
   /* Carrusel modificado */
   .custom-carousel {
     max-width: 1100px;
     margin: 0 auto;
-    background-color: #ffb347;
+    background-color: #ffde59c0;
     border-radius: 8px;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
     padding: 20px;
@@ -163,7 +126,7 @@
   .asignatura {
     display: flex;
     align-items: center;
-    padding: 20px;
+    padding: 30px;
     border-radius: 8px;
     margin: 10px 20px; 
     max-width: 300px;
@@ -376,6 +339,20 @@
 .superposicion__panel--derecho {
   right: 0;
   transform: translateX(0);
+}
+
+.superposicion__boton {
+  border: 1px solid;
+  padding: .6rem 2rem;
+  border-radius: 6px;
+  background: transparent;
+  transition: .5s background ease;
+
+}
+
+.superposicion__boton:hover {
+  background-color: #f6f5f7;
+  border-color: wheat;
 }
 
 .superposicion__panel--izquierdo {
