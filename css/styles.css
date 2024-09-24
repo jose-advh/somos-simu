@@ -57,58 +57,6 @@
     width: 55%;
   }
 
-  /* Carrusel modificado */
-  .custom-carousel {
-    max-width: 1100px;
-    margin: 0 auto;
-    background-color: #ffde59c0;
-    border-radius: 8px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    position: relative;
-  }
-
-  .carousel-content {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-
-  .carousel-img {
-    border-radius: 5px;
-    width: 350px;
-    height: 250px;
-    margin-right: 20px;
-  }
-
-  .carousel-text h3 {
-    font-size: 3rem;
-    color: #000000;
-    margin-bottom: 10px;
-  }
-
-  .carousel-text p {
-    color: #000000;
-    font-size: 1.5rem;
-  }
-
-  .carousel-control-prev {
-    position: relative;
-    transform: translateY(2%);
-  }
-
-  .carousel-control-next {
-    left: 95%;
-    position: absolute;
-    transform: translateY(2%);
-  }
-
-  .carousel-indicators{
-    top: 110%;
-    position: absolute;
-    transform: translateY(2%);
-  }
-
   /* Contenedor principal de asignaturas */
   .asignaturas {
     display: flex;
@@ -168,6 +116,59 @@
     }
   }
 
+  .grid {
+    background: hsl(36, 100%, 99%);
+    margin: auto;
+    width: 85%;
+    max-width: 1500px;
+    height: 500px;
+    display: grid;
+    gap: 1.5vw;
+    padding: 1vw;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas:
+      "hero hero hero hero aside2 aside2"
+      "hero hero hero hero aside2 aside2"
+      "hero hero hero hero aside2 aside2"
+      "hero hero hero hero aside2 aside2"
+      "aside3 aside3 aside4 aside4 aside5 aside5 ";
+  }
+
+  .item {
+    border: 1px solid #464545;
+    border-radius: 10px;
+  }
+
+  .item--aprende_simu {
+    background: url(/img/bento_main/aprende_simu.png) center/cover;
+  }
+
+  .item--black {
+    background-color: black;
+  }
+  
+  .item--black h3 {
+    color: white !important;
+  }
+
+  .grid .item:nth-child(1) {
+    grid-area: hero;
+  }
+  .grid .item:nth-child(2) {
+    grid-area: aside2;
+  }
+  
+  .grid .item:nth-child(3) {
+    grid-area: aside3;
+  }
+  .grid .item:nth-child(4) {
+    grid-area: aside4;
+  }
+  
+  .grid .item:nth-child(5) {
+    grid-area: aside5;
+  }
 
 /* Comienza página de acceder */
 
