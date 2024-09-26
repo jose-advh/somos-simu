@@ -8,9 +8,8 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 </head>
 <body>
-  <div class="seccion__principal">
     <header class="header" id="header">
-      <nav class="navbar navbar-expand-lg navbar-light align-items-center justify-content-between">
+      <nav class="navbar navbar-expand-lg navbar-light align-items-center justify-content-between px-4">
         <div class="container-fluid">
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -24,10 +23,10 @@
                 <a class="nav-link" aria-current="page" href="./pages/nosotros.html">NOSOTROS</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">CONTACTO</a>
+                <a class="nav-link" href="#">EDUCADORES</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">COMUNIDAD</a>
+                <a class="nav-link" href="./pages/comunidad.html">COMUNIDAD</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">RECURSOS</a>
@@ -36,47 +35,48 @@
           </div>
           <ul>
             <li class="nav-item">
-              <a href="./pages/acceder.html" class="btn header__btn">Aprender ahora</a>
+              <a href="./acceder.php" class="btn header__btn">Aprender ahora</a>
             </li>
           </ul>
         </div>
       </nav>
     </header>
     <main class="main justify-content-center align-items-center text-center">
-      <figure class="main__figure">
-        <img src="./img/backgrounds/texto_somos_simu.webp" class="main__img m-auto" alt="Somos Simu">
-      </figure>
+      <article class="seccion__principal">
+        <figure class="main__figure">
+          <img src="./img/backgrounds/texto_somos_simu.webp" class="main__img m-auto" alt="Somos Simu">
+        </figure>
 
-      <section class="asignaturas">
-        <div class="scrolling-content">
-          <div class="asignatura">
-            <img src="./img/mate.png" alt="Matemáticas">
-            <div class="text-content"><h3>Matemáticas</h3></div>
+        <section class="asignaturas">
+          <div class="scrolling-content">
+            <div class="asignatura">
+              <img src="img/img_marquee/mate.png" alt="Matemáticas">
+              <div class="text-content"><h3 class="fw-bold">Matemáticas</h3></div>
+            </div>
+            <div class="asignatura2">
+              <img src="img/img_marquee/lectura.png" alt="Lectura Crítica">
+              <div class="text-content"><h3 class="fw-bold">Lectura Crítica</h3></div>
+            </div>
+            <div class="asignatura2">
+              <img src="img/img_marquee/sociales.png" alt="Ciencias Sociales">
+              <div class="text-content"><h3 class="fw-bold">Ciencias Sociales</h3></div>
+            </div>
+            <div class="asignatura">
+              <img src="img/img_marquee/ingles.png" alt="Inglés">
+              <div class="text-content"><h3 class="fw-bold">Inglés</h3></div>
+            </div>
+            <div class="asignatura2">
+              <img src="img/img_marquee/naturales.png" alt="Ciencias Naturales">
+              <div class="text-content"><h3 class="fw-bold">Ciencias Naturales</h3></div>
+            </div>
           </div>
-          <div class="asignatura2">
-            <img src="./img/lectura.png" alt="Lectura Crítica">
-            <div class="text-content"><h3>Lectura Crítica</h3></div>
-          </div>
-          <div class="asignatura2">
-            <img src="./img/sociales.png" alt="Ciencias Sociales">
-            <div class="text-content"><h3>Ciencias Sociales</h3></div>
-          </div>
-          <div class="asignatura">
-            <img src="./img/ingles.png" alt="Inglés">
-            <div class="text-content"><h3>Inglés</h3></div>
-          </div>
-          <div class="asignatura2">
-            <img src="./img/naturales.png" alt="Ciencias Naturales">
-            <div class="text-content"><h3>Ciencias Naturales</h3></div>
-          </div>
-        </div>
-      </section>
-  </div>
+        </section>
+      </article>
 
       <article class="main__simulacros d-flex justify-content-center align-items-center p-4 w-75 m-auto">
         <section class="main__texto--simulacros w-50">
-          <h2 class="display-5">SIMULACROS</h2>
-          <p>
+          <h2 class="display-5 fw-bold">SIMULACROS</h2>
+          <p class="fw-bold">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed tempora voluptas facere et quas, illum vitae est ex expedita. Labore praesentium ipsa libero assumenda voluptatibus qui, ea delectus voluptates reprehenderit!
           </p>
 

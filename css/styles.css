@@ -20,13 +20,14 @@
 
 .header {
     position: fixed;
+    z-index: 99;
     right: 0;
     left: 0;
 }
 
 .scrolled {
     transition: 0.3s background ease;
-    background-color: #ffffff59;
+    background-color: #fcb90059;
     height: 70px;
 }
 
