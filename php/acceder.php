@@ -71,7 +71,7 @@
             </div>
         </div>
     </div>
-    <script src="./js/animation_acceder.js"></script>
+    <script src="../js/animation_acceder.js"></script>
 <?php  
 include ("registro.php");
 ?>
