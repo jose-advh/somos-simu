@@ -13,7 +13,7 @@
 
 <body class="body-acceder">
     <header>
-        <a href="/index.html" class="header__volver">Volver</a>
+        <a href="../index.html" class="header__volver">Volver</a>
     </header>
     <div class="contenedor" id="contenedor">
 
@@ -75,7 +75,7 @@
     </div>
     <script src="../js/scripts.js"></script>
 <?php  
-include ("php/registro.php");
+include ("registro.php");
 ?>
 
 </body>
