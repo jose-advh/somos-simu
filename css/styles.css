@@ -120,9 +120,7 @@
     border-radius: 5px;
 }
 
-footer {
-    background-color: var(--color-principal) !important;
-}
+
 
 /* Comienza página de acceder */
 
@@ -358,7 +356,7 @@ footer {
 .header_nav-contenido {
     justify-content: space-between;
     align-items: center;
-    height: 90%;
+    height: 100%;
 }
 
 .header_nav-contenido a {

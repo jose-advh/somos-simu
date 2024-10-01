@@ -95,45 +95,9 @@
                             Este simulacro incluye 2 preguntas de cada materia,
                             tendrá un tiempo limite de 30 minutos.
                         </p>
-                        <button type="button" class="btn btn-secondary btn-lg">
+                        <a class="btn btn-secondary btn-lg" href="plantilla.php">
                             Realizar
-                        </button>
-                    </div>
-                </div>
-
-                <div class="card" style="width: 18rem">
-                    <img
-                        class="card-img-top"
-                        src="../img/cards_simulacro/simulacro_matematicas.jpg"
-                        alt="Card image cap"
-                    />
-                    <div class="card-body">
-                        <h5 class="card-title">SIMULACRO MATEMATICAS</h5>
-                        <p class="card-text">
-                            Este simulacro incluye 15 preguntas de matematicas,
-                            tendrá un tiempo limite de 25 minutos.
-                        </p>
-                        <button type="button" class="btn btn-secondary btn-lg">
-                            Realizar
-                        </button>
-                    </div>
-                </div>
-
-                <div class="card" style="width: 18rem">
-                    <img
-                        class="card-img-top"
-                        src="../img/cards_simulacro/simulacro_principal-global.jpg"
-                        alt="Card image cap"
-                    />
-                    <div class="card-body">
-                        <h5 class="card-title">SIMULACRO GENERAL</h5>
-                        <p class="card-text">
-                            Este simulacro incluye 2 preguntas de cada materia,
-                            tendrá un tiempo limite de 30 minutos.
-                        </p>
-                        <button type="button" class="btn btn-secondary btn-lg">
-                            Realizar
-                        </button>
+                        </a>
                     </div>
                 </div>
             </section>
