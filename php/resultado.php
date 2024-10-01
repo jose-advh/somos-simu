@@ -27,7 +27,7 @@
                 <ul class="nav_ul-contenido text-center gap-4">
                     <li>
                         <a
-                            href="../pages/simulacros.html"
+                            href="simulacros.php"
                             class="d-flex gap-2 align-items-center"
                         >
                             <img
@@ -58,7 +58,7 @@
                                 class="w-25"
                                 alt="Icono de regreso"
                             />
-                            VOLVER
+                            SALIR
                         </a>
                     </li>
                 </ul>

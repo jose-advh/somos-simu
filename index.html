@@ -4,13 +4,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Simu Icfes</title>
-  <link rel="stylesheet" href="./css/styles.css">
+  <link rel="stylesheet" href="css/styles.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 </head>
 <body>
-  <div class="seccion__principal">
     <header class="header" id="header">
-      <nav class="navbar navbar-expand-lg navbar-light align-items-center justify-content-between">
+      <nav class="navbar navbar-expand-lg navbar-light align-items-center justify-content-between px-4">
         <div class="container-fluid">
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -21,13 +20,10 @@
                 <a class="nav-link active" aria-current="page" href="#">INICIO</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="./pages/nosotros.html">NOSOTROS</a>
+                <a class="nav-link" aria-current="page" href="pages/nosotros.html">NOSOTROS</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">CONTACTO</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">COMUNIDAD</a>
+                <a class="nav-link" href="pages/comunidad.html">COMUNIDAD</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">RECURSOS</a>
@@ -42,45 +38,44 @@
         </div>
       </nav>
     </header>
-    <main class="main justify-content-center align-items-center text-center">
+    <main class="main seccion__principal justify-content-center align-items-center text-center">
       <figure class="main__figure">
-        <img src="./img/backgrounds/texto_somos_simu.webp" class="main__img m-auto" alt="Somos Simu">
+        <img src="img/backgrounds/texto_somos_simu.webp" class="main__img m-auto" alt="Somos Simu">
       </figure>
 
       <section class="asignaturas">
         <div class="scrolling-content">
           <div class="asignatura">
-            <img src="./img/mate.png" alt="Matemáticas">
+            <img src="img/img_marquee/mate.png" alt="Matemáticas">
             <div class="text-content"><h3>Matemáticas</h3></div>
           </div>
           <div class="asignatura2">
-            <img src="./img/lectura.png" alt="Lectura Crítica">
+            <img src="img/img_marquee/lectura.png" alt="Lectura Crítica">
             <div class="text-content"><h3>Lectura Crítica</h3></div>
           </div>
           <div class="asignatura2">
-            <img src="./img/sociales.png" alt="Ciencias Sociales">
+            <img src="img/img_marquee/sociales.png" alt="Ciencias Sociales">
             <div class="text-content"><h3>Ciencias Sociales</h3></div>
           </div>
           <div class="asignatura">
-            <img src="./img/ingles.png" alt="Inglés">
+            <img src="img/img_marquee/ingles.png" alt="Inglés">
             <div class="text-content"><h3>Inglés</h3></div>
           </div>
           <div class="asignatura2">
-            <img src="./img/naturales.png" alt="Ciencias Naturales">
+            <img src="img/img_marquee/naturales.png" alt="Ciencias Naturales">
             <div class="text-content"><h3>Ciencias Naturales</h3></div>
           </div>
         </div>
       </section>
-  </div>
 
       <article class="main__simulacros d-flex justify-content-center align-items-center p-4 w-75 m-auto">
         <section class="main__texto--simulacros w-50">
-          <h2 class="display-5">SIMULACROS</h2>
+          <h2 class="display-5 fw-bold">SIMULACROS</h2>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed tempora voluptas facere et quas, illum vitae est ex expedita. Labore praesentium ipsa libero assumenda voluptatibus qui, ea delectus voluptates reprehenderit!
+            En Somos Simu, nuestros simulacros están diseñados para brindarte una experiencia de aprendizaje inmersiva y efectiva. Cada simulacro está cuidadosamente estructurado para replicar de manera fiel el formato y nivel de dificultad de la prueba Saber 11, garantizando que te enfrentes a un entorno de evaluación lo más cercano posible a la realidad.
           </p>
 
-          <a href="#" class="btn btn-warning">Ver más</a>
+          <a href="php/acceder.php" class="btn btn-warning fw-bold">Ver más</a>
         </section>
           <img src="./img/bento_main/simulacros_img_pc.png" class="w-50" alt="Aprnede con simu">
         <section>
@@ -88,8 +83,45 @@
         </section>
       </article>
     </main>
+    <footer class="bg-warning pt-5 pb-4">
+      <div class="container text-center text-md-start">
+        <div class="row">
+          <div class="col-md-4 col-lg-3 mx-auto mb-4">
+            <h5 class="text-uppercase fw-bold mb-4">Sobre nosotros</h5>
+            <p>
+              Somos Simu es una plataforma educativa dedicada a la preparación de la prueba Saber 11. Ofrecemos simulacros interactivos y recursos para mejorar el rendimiento.
+            </p>
+          </div>
+    
+          <div class="col-md-4 col-lg-2 mx-auto mb-4">
+            <h5 class="text-uppercase fw-bold mb-4">Enlaces útiles</h5>
+            <ul class="list-unstyled">
+              <li><a href="#" class="text-decoration-none">Inicio</a></li>
+              <li><a href="#" class="text-decoration-none">Simulacros</a></li>
+              <li><a href="#" class="text-decoration-none">Recursos</a></li>
+              <li><a href="#" class="text-decoration-none">Contacto</a></li>
+            </ul>
+          </div>
+    
+          <!-- Redes sociales -->
+          <div class="col-md-4 col-lg-3 mx-auto mb-md-0 mb-4">
+            <h5 class="text-uppercase fw-bold mb-4">Síguenos</h5>
+            <div class="d-flex flex-column">
+              <a href="#">Instagram</a>
+              <a href="#">Faceboock</a>
+              <a href="#">Twitter</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+      <!-- Derechos reservados -->
+      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+        © 2024 Somos Simu. Todos los derechos reservados.
+      </div>
+    </footer>
     <!-- Script Bootstrap -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-  <script src="./js/scripts.js"></script>
+  <script src="./js/scroll_effect.js"></script>
 </body>
 </html>

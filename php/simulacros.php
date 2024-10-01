@@ -1,5 +1,12 @@
 <!doctype html>
 <html lang="es">
+<?php
+  session_start();
+  if (!isset($_SESSION['nombre'])) {
+    header('Location: ../acceder.php');
+    exit;
+  }
+?>
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -22,7 +29,7 @@
                         src="../img/iconos/user_icono.png"
                         alt="Avatar del usuario"
                     />
-                    <p class="text-center">Hola, José Díaz</p>
+                    <p class="text-center">Hola, <?php echo $_SESSION['nombre']; ?></p>
                 </div>
                 <ul class="nav_ul-contenido text-center gap-4">
                     <li class="linea_roja-contenido">
@@ -37,7 +44,7 @@
                     </li>
                     <li>
                         <a
-                            href="../pages/resultado.html"
+                            href="resultado.php"
                             class="d-flex gap-2 align-items-center"
                         >
                             <img
@@ -58,7 +65,7 @@
                                 class="w-25"
                                 alt="Icono de regreso"
                             />
-                            VOLVER
+                            SALIR
                         </a>
                     </li>
                 </ul>

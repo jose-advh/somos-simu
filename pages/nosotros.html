@@ -5,26 +5,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sobre Nosotros Simu-Icfes</title>
-    <link rel="stylesheet" href="../css/style.css">
-</head>
-
-<body>
-    <header>
-        <div class="container">
-            <p class="logo">SIMU-ICFES</p>
-            <nav>
-                <a href="">Inicio</a>
-                <a href="">Nosotros</a>
-                <a href="">Contacto</a>
-                <a href="">Comunidad</a>
-                <a href="">Recursos</a>
-            </nav>
-        </div>
-    </header>
+    <link rel="stylesheet" href="../css/nosotros.css">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  </head>
+  <body>
+    <header class="header" id="header">
+        <nav class="navbar navbar-expand-lg navbar-light align-items-center justify-content-between px-4">
+          <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="../index.html">INICIO</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="nosotros.html">NOSOTROS</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="comunidad.html">COMUNIDAD</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">RECURSOS</a>
+                </li>
+              </ul>
+            </div>
+            <ul>
+              <li class="nav-item">
+                <a href="php/acceder.php" class="btn header__btn">Aprender ahora</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </header>
 
     <section id="hero">
-        <h1>Sobre Nosotros</h1>
-        <p>En Simu-ICFES, creemos que la educación es la clave para el éxito. Por eso, hemos creado una plataforma
+        <h1 class="display-4 fw-bold text-warning">Sobre Nosotros</h1>
+        <p class="display-3 fw-bold">En Simu-ICFES, creemos que la educación es la clave para el éxito. Por eso, hemos creado una plataforma
             integral que te brinda las herramientas necesarias para prepararte para la prueba Saber 11. Desde simulacros
             personalizados hasta materiales de apoyo y recursos exclusivos, estamos comprometidos con tu éxito
             académico.</p>
@@ -36,7 +55,7 @@
             <div class="texto">
 
                 <h2><span class="color-acento">Misión</span></h2>
-                <p>Nuestra misión en simu-icfes es brindar a los estudiantes las herramientas necesarias para prepararse
+                <p class="fw-bold">Nuestra misión en simu-icfes es brindar a los estudiantes las herramientas necesarias para prepararse
                     de manera efectiva y obtener un buen resultado en la prueba saber 11. Nos comprometemos a ofrecer
                     simulacros de alta calidad, material educativo actualizado y un ambiente de aprendizaje en línea que
                     propicie el crecimiento académico de cada usuario.</p>
@@ -49,7 +68,7 @@
             <div class="texto">
 
                 <h2><span class="color-acento">Visión</span></h2>
-                <p>Nuestra visión en simu-icfes es ser el sitio web de referencia para la preparación de la prueba saber
+                <p class="fw-bold">Nuestra visión en simu-icfes es ser el sitio web de referencia para la preparación de la prueba saber
                     11, reconocido por su calidad, efectividad y compromiso con los estudiantes. Aspiramos a ser líderes
                     en el sector educativo en línea, ofreciendo una plataforma innovadora y adaptada a las necesidades
                     de cada usuario, con el objetivo de contribuir al éxito académico de miles de estudiantes en
@@ -63,7 +82,7 @@
             <div class="texto">
 
                 <h2><span class="color-acento">Nuestra Historia</span></h2>
-                <p>La aplicación simu-icfes surgio debido a la falta de un sitio web que ofrezca a los estudiantes la
+                <p class="fw-bold">La aplicación simu-icfes surgio debido a la falta de un sitio web que ofrezca a los estudiantes la
                     capacidad para poder estudiar y presentar pruebas con resultados prometedores y manejando una
                     metodología dinámica y no tan estricta, y asi fue como un grupo de profesionales apasionados por la
                     educación se reunieron con un objetivo en común: crear una herramienta que ayudara a los estudiantes
@@ -72,42 +91,105 @@
         </div>
     </section>
 
-
-
-    <section class="nosotros">
-        <div class="container">
-            <h2>Desarrolladores Front-end</h2>
-            <div class="programas">
-                <div class="carta">
-                    <h3>Nombre completo</h3>
+    <article class="nosotros main_team p-2 d-flex flex-column gap-3">
+        <h2 class="text-warning">Desarrolladores Front-end</h2>
+        <section class="d-flex gap-3 justify-content-center align-items-center">
+            <div class="card bg-dark" style="width: 18rem; ">
+                <img
+                    src="../img/personas/jose_diaz.webp"
+                    class="card-img-top"
+                    alt="Fotografia del guapo, bello, perfecto, gran desarrollador y programador José Armando Díaz Hernandez"
+                />
+                <div class="card-body">
+                    <h5 class="card-title text-light">José Díaz</h5>
                 </div>
-                <div class="carta">
-                    <h3>Nombre completo</h3>
-                </div>
-                <div class="carta">
-                    <h3>Nombre completo</h3>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-    <section class="nosotros">
-        <div class="container">
-            <h2>Desarrolladores Back-end</h2>
-            <div class="programas">
-                <div class="carta">
-                    <h3>Nombre completo</h3>
-                </div>
-                <div class="carta">
-                    <h3>Nombre completo</h3>
-                </div>
-                <div class="carta">
-                    <h3>Nombre completo</h3>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">Equipo Front-End</li>
+                </ul>
+                <div class="card-body">
+                    <a href="#" class="card-link text-light">GitHub</a>
+                    <a href="#" class="card-link text-light">LinkedIn</a>
                 </div>
             </div>
-        </div>
-    </section>
+    
+            <div class="card bg-dark" style="width: 18rem; ">
+                <img
+                    src="../img/personas/gael.webp"
+                    class="card-img-top"
+                    alt="Fotografia de gael"
+                />
+                <div class="card-body">
+                    <h5 class="card-title text-light">Gael Mendoza</h5>
+                </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">Equipo Front-End</li>
+                </ul>
+                <div class="card-body">
+                    <a href="#" class="card-link text-light">GitHub</a>
+                    <a href="#" class="card-link text-light">LinkedIn</a>
+                </div>
+            </div>
+
+            <div class="card bg-dark" style="width: 18rem; ">
+                <img
+                    src="../img/personas/daysliz.webp"
+                    class="card-img-top"
+                    alt="Fotografia de Daysliz"
+                />
+                <div class="card-body">
+                    <h5 class="card-title text-light">Daysliz Vasquez</h5>
+                </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">Equipo Front-End</li>
+                </ul>
+                <div class="card-body">
+                    <a href="#" class="card-link text-light">GitHub</a>
+                    <a href="#" class="card-link text-light">LinkedIn</a>
+                </div>
+            </div>
+        </section>
+    </article>
+    <article class="nosotros main_team p-2 d-flex flex-column gap-3">
+        <h2 class="text-warning">Desarrolladores Backend</h2>
+
+        <section class="d-flex gap-3 justify-content-center align-items-center">    
+            <div class="card bg-dark" style="width: 18rem; ">
+                <img
+                    src="../img/personas/gael.webp"
+                    class="card-img-top"
+                    alt="Fotografia de Andrés"
+                />
+                <div class="card-body">
+                    <h5 class="card-title text-light">ANdrés Mena</h5>
+                </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">Equipo Front-End</li>
+                </ul>
+                <div class="card-body">
+                    <a href="#" class="card-link text-light">GitHub</a>
+                    <a href="#" class="card-link text-light">LinkedIn</a>
+                </div>
+            </div>
+
+            <div class="card bg-dark" style="width: 18rem; ">
+                <img
+                    src="../img/personas/daysliz.webp"
+                    class="card-img-top"
+                    alt="Fotografia de Héctor"
+                />
+                <div class="card-body">
+                    <h5 class="card-title text-light">Héctor Díaz</h5>
+                </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">Equipo Front-End</li>
+                </ul>
+                <div class="card-body">
+                    <a href="#" class="card-link text-light">GitHub</a>
+                    <a href="#" class="card-link text-light">LinkedIn</a>
+                </div>
+            </div>
+        </section>
+    </article>
 
   
 
@@ -141,10 +223,10 @@
 
 
     <section id="final">
-        <h2>¡Únete a simu-icfes y prepárate para brillar en el examen!</h2>
+        <h2 class="text-light">¡Únete a simu-icfes y prepárate para brillar en el examen!</h2>
         <button>Aprender ahora</button>
     </section>
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
-
 </html>

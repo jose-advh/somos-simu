@@ -120,6 +120,10 @@
     border-radius: 5px;
 }
 
+footer {
+    background-color: var(--color-principal) !important;
+}
+
 /* Comienza página de acceder */
 
 /* importar fuente */
@@ -394,10 +398,4 @@
 
 .active {
     color: rgb(255, 94, 0) !important;
-}
-
-.main__principal {
-    height: 100vh;
-    display: flex;
-    justify-content: center;
 }

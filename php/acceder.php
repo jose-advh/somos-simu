@@ -1,5 +1,7 @@
 <!DOCTYPE html>
 <html lang="es">
+
+
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -10,9 +12,6 @@
 </head>
 
 <body class="body-acceder">
-    <header>
-        <a href="../index.html" class="header__volver">Volver</a>
-    </header>
     <div class="contenedor" id="contenedor">
 
         <!-- 
@@ -21,13 +20,14 @@
       - Validación: Implementar validación del lado del servidor para todos los campos
       -->
         <div class="formulario__contenedor formulario__contenedor--registro">
-            <form action="#" class="formulario" method="post">
+            <form action="" class="formulario" method="post">
                 <h1 class="formulario__titulo">Crea tu Cuenta</h1>
                 <span class="formulario__subtitulo">Usa tu email como registro</span>
                 <input type="text" placeholder="Nombre" class="formulario__entrada" name="name" required>
                 <input type="email" placeholder="Correo" class="formulario__entrada" name="email" required>
                 <input type="password" placeholder="Contraseña" class="formulario__entrada" name="password" required>
-                <button class="formulario__boton formulario__boton--lila" name="registrar">Registrar</button>
+                <input type="hidden" name ="action" value="register">
+                <button type="submit" class="formulario__boton formulario__boton--lila" name="registrar">Registrar</button>
             </form>
         </div>
 
@@ -37,16 +37,17 @@
       - Validación: Verificar credenciales contra la base de datos
       -->
         <div class="formulario__contenedor formulario__contenedor--inicio-sesion">
-            <form action="#" class="formulario" method="post">
+            <form action="login.php" class="formulario" method="post">
                 <h1 class="formulario__titulo">Iniciar Sesión</h1>
                 <span class="formulario__subtitulo">Usa tu email</span>
+                <input type="hidden" name="action" value="login">
                 <input type="email" placeholder="Correo" class="formulario__entrada" name="email" required>
                 <input type="password" placeholder="Contraseña" class="formulario__entrada" name="password" required>
 
                 <!-- 
             Ustedes verán si le dan funcionamiento a esto. (Olvidaste contraseña)
           -->
-                <a href="#" class="formulario__enlace">¿Olvidaste tu contraseña?</a>
+                
                 <button class="formulario__boton" name="Inicio">Iniciar sesión</button>
             </form>
         </div>
@@ -62,11 +63,37 @@
                         Inicia sesión con tu cuenta
                     </p>
                     <button class="superposicion__boton superposicion__boton--fantasma" id="iniciarSesion">Inicia sesión</button>
+                    <li class="mt-5">
+                        <a
+                            href="../index.html"
+                            class="d-flex align-items-center gap-2"
+                        >
+                            <img
+                                src="../img/iconos/volver_icono.png"
+                                class="w-25"
+                                alt="Icono de regreso"
+                            />
+                            SALIR
+                        </a>
+                    </li>
                 </div>
                 <div class="superposicion__panel superposicion__panel--derecho align-items-center">
                     <h1 class="superposicion__titulo">Hey, ¿aún no tienes una cuenta?</h1>
                     <p class="superposicion__descripcion">Crear tu cuenta</p>
                     <button class="superposicion__boton superposicion__boton--fantasma" id="registrar">Registrarme</button>
+                    <li class="mt-5">
+                        <a
+                            href="../index.html"
+                            class="d-flex align-items-center gap-2"
+                        >
+                            <img
+                                src="../img/iconos/volver_icono.png"
+                                class="w-25"
+                                alt="Icono de regreso"
+                            />
+                            SALIR
+                        </a>
+                    </li>
                 </div>
             </div>
         </div>
@@ -74,6 +101,7 @@
     <script src="../js/animation_acceder.js"></script>
 <?php  
 include ("registro.php");
+include ("login.php");
 ?>
 
 </body>
