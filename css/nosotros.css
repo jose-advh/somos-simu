@@ -43,7 +43,7 @@ button:hover{
     justify-content: center;
     text-align: center;
     flex-direction: column;
-    height: 90vh;
+    height: 110vh;
     background-image: linear-gradient(
         0deg,
         rgba(0,0,0,0.5),
@@ -192,9 +192,6 @@ button:hover{
     }
 
     .mision .img-container{
-        background-image: url("../img/simulacro.png");
-        background-size: cover;
-        background-position: center center;
         height: 350px;
         width: 400px; 
         border-radius: 10px;
@@ -268,9 +265,6 @@ button:hover{
     }
 
     .caracteristicas .img-container {
-        background-image: url("../img/simulacro.png");
-        background-size: cover;
-        background-position: center center;
         width: 550px; 
         height: 350px;
         margin-left: 40px;

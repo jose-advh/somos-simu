@@ -1,35 +1,39 @@
-<!doctype html>
-<html lang="es">
+
 <?php
-  session_start();
-  if (!isset($_SESSION['nombre'])) {
-    header('Location: ../acceder.php');
-    exit;
-  }
+session_start();
+// session_destroy();
+
+include("../admin/funciones.php");
+
+aumentarVisita();
+
+$categorias =  obtenerCategorias();
+
+if(isset($_GET['idCategoria'])){
+    session_start();
+    $_SESSION['usuario'] = "usuario";
+    $_SESSION['idCategoria'] = $_GET['idCategoria'];
+    header("Location: jugar.php");
+}
+
 ?>
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Simu - Contenido</title>
-        <link rel="stylesheet" href="../css/styles.css" />
-        <link
-            href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
-            rel="stylesheet"
-            integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
-            crossorigin="anonymous"
-        />
-    </head>
-    <body class="body-contenido d-flex">
-        <header class="header-contenido shadow">
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simu - Dashboard</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body class="d-flex">
+<header class="header-contenido shadow">
             <nav class="header_nav-contenido d-flex flex-column">
                 <div
                     class="nav_usuario-contenido d-flex flex-column align-items-center"
                 >
-                    <img
-                        src="../img/iconos/user_icono.png"
-                        alt="Avatar del usuario"
-                    />
-                    <p class="text-center">Hola, <?php echo $_SESSION['nombre']; ?></p>
+                    <h2 class="text-center py-2">Simu</h2>
                 </div>
                 <ul class="nav_ul-contenido text-center gap-4">
                     <li class="linea_roja-contenido">
@@ -44,7 +48,7 @@
                     </li>
                     <li>
                         <a
-                            href="resultado.php"
+                            href="#"
                             class="d-flex gap-2 align-items-center"
                         >
                             <img
@@ -69,38 +73,53 @@
                         </a>
                     </li>
                 </ul>
-                <a href="#" class="gap-4">
+                <a href="../admin/login.php" class="gap-4">
                     <img
                         src="../img/iconos/ajustes_icono.png"
                         class="w-25"
-                        alt="Icono de ajustes"
+                        alt="Icono de admin"
                     />
-                    AJUSTES
+                    ADMIN
                 </a>
             </nav>
         </header>
-        <main class="main-contenido">
-            <section
-                class="main_simulacros-contenido p-4 d-flex gap-4 flex-wrap"
-            >
-                <div class="card" style="width: 18rem">
-                    <img
-                        class="card-img-top"
-                        src="../img/cards_simulacro/simulacro_principal-global.jpg"
-                        alt="Card image cap"
-                    />
-                    <div class="card-body">
-                        <h5 class="card-title">SIMULACRO GENERAL</h5>
-                        <p class="card-text">
-                            Este simulacro incluye 2 preguntas de cada materia,
-                            tendrá un tiempo limite de 30 minutos.
-                        </p>
-                        <a class="btn btn-secondary btn-lg" href="plantilla.php">
-                            Realizar
+    </header>
+    <main class="w-80 m-auto">
+            <div class="p-2 d-flex flex-wrap gap-4">
+                <?php while ($cat = mysqli_fetch_assoc($categorias)):?>
+                <div class="p-4">
+                    <form action="<?php echo $_SERVER['PHP_SELF'] ?>" id="<?php echo $cat['tema']?>">
+                        <input type="hidden" name="idCategoria" value="<?php echo $cat['tema']?>">
+                        <a href="javascript:{}" onclick="document.getElementById(<?php echo $cat['tema']?>).submit(); return false;">
+                        <div class="card" style="width: 18rem;">
+                            <div class="card-body">
+                                <h5 class="card-title fw-bold">
+                                    <?php echo obtenerNombreTema($cat['tema'])?>
+                                </h5>
+                                <h6 class="card-subtitle mb-2 text-muted">10 Preguntas</h6>
+                                <p class="card-text">
+                                    <?php
+                                        if ($cat['tema'] <= 5) {
+                                         echo 
+                                            "
+                                             Este simulacro contiene preguntas únicamente de la materia " .obtenerNombreTema($cat['tema']).  ".   
+                                            ";                                            
+                                         } elseif ($cat['tema'] == 6) {
+                                            echo 
+                                            "
+                                             Este simulacro contiene preguntas de todas las materias que se presentan en la prueba.
+                                            ";
+                                         }   
+                                    ?>
+                                </p>
+                            </div>
+                        </div>
                         </a>
-                    </div>
+                    </form>
                 </div>
-            </section>
-        </main>
-    </body>
+                <?php endwhile?>
+        </div>
+    </main>
+    <footer></footer>
+</body>
 </html>

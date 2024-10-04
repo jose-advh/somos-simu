@@ -350,7 +350,7 @@
     flex-direction: column;
     justify-content: center;
     height: 100vh;
-    width: 12rem;
+    width: 22rem;
 }
 
 .header_nav-contenido {
@@ -367,6 +367,16 @@
     font-weight: 900;
     font-size: 1rem;
     padding: 20px;
+}
+
+.card {
+    transition: background .3s ease-in-out !important;
+    background-color: rgb(206, 207, 207) !important;
+}
+
+.card:hover {
+    background-size: 100% 100% !important;
+    background-color: #E06F04 !important;
 }
 
 .nav_ul-contenido li {
